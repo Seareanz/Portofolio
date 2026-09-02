@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Zaenal Afandi | Web Developer — PPLG</title>
+
+    <meta
+        name="description"
+        content="Portofolio Zaenal Afandi, siswa SMK XII PPLG dengan minat di bidang pengembangan web, teamwork, adaptability, serta problem solving."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Navigasi utama">
+        <div class="container">
+            <a href="#home" class="nav-logo" aria-label="Beranda">
+                <span class="logo-dot"></span>
+                Z . A
+            </a>
+
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#home" role="menuitem" class="active">Beranda</a></li>
+                <li role="none"><a href="#about" role="menuitem">Tentang</a></li>
+                <li role="none"><a href="#education" role="menuitem">Pendidikan</a></li>
+                <li role="none"><a href="#skills" role="menuitem">Keahlian</a></li>
+                <li role="none"><a href="#experience" role="menuitem">Pengalaman</a></li>
+                <li role="none"><a href="#projects" role="menuitem">Proyek</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Kontak</a></li>
+            </ul>
+
+            <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu navigasi" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    
+    <div class="nav-overlay" id="navOverlay" role="navigation" aria-label="Navigasi mobile">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+    </div>
+
+    
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-photo-wrapper">
+                    <div class="hero-photo" aria-label="Foto profil">
+                        <div class="photo-inner">
+                            <img src="Asset/foto-profil.jpg" alt="Zaenal Afandi" loading="lazy" width="320" height="320" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Halo, Saya
+                        <br />
+                        <span class="highlight">Zaenal Afandi</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Siswa SMK jurusan Pengembangan Perangkat Lunak dan Gim (PPLG) yang memiliki minat di bidang pengembangan web.
+                        Saya senang mempelajari teknologi baru,
+                        mampu bekerja sama dalam tim,
+                        serta memiliki semangat untuk terus
+                        mengembangkan kemampuan di dunia teknologi.
+                    </p>
+
+                    <div class="typing-wrap">
+                        <span class="label">⚡ Tech Stack:</span>
+                        <span class="typing-group">
+                            <span class="typing-text" id="typingText"></span>
+                            <span class="cursor"></span>
+                        </span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+                        <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                    </div>
+
+                    <div class="hero-social">
+                        <a href="https://github.com/Seareanz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fandi-undefined-a80b70400/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:Affandizaenal5@gmail.com" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section" id="about">
+        <div class="container section-focus">
+            <div class="about-content reveal">
+                <span class="section-label">Tentang Saya</span>
+                <h2 class="section-title">Tentang <span>Saya</span></h2>
+                <p>
+                    Saya adalah siswa SMK jurusan
+                    <span class="highlight-text">Pengembangan Perangkat Lunak dan Gim (PPLG)</span>
+                    yang memiliki minat di bidang pengembangan web.
+                    Saya senang mempelajari teknologi baru,
+                    mampu bekerja sama dalam tim,
+                    serta memiliki semangat untuk terus
+                    mengembangkan kemampuan di dunia teknologi.
+                </p>
+                <div class="about-tags">
+                    <span>SMK XII PPLG</span>
+                    <span>Web Development</span>
+                    <span>Teamwork</span>
+                    <span>Adaptability</span>
+                    <span>Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section" id="education">
+        <div class="container section-focus">
+            <div class="text-center reveal">
+                <span class="section-label">Profil</span>
+                <h2 class="section-title">Pendidikan <span>&amp; Bahasa</span></h2>
+                <p class="section-desc mx-auto">
+                    Informasi pendidikan dan bahasa yang tercantum dalam CV.
+                </p>
+            </div>
+
+            <div class="profile-grid">
+                <div class="profile-card reveal-left">
+                    <div class="profile-card-icon">🎓</div>
+                    <div>
+                        <span class="profile-card-label">Pendidikan</span>
+                        <h3>SMK BPPI Baleendah</h3>
+                        <p>SMK XII PPLG</p>
+                        <span class="profile-period">2024 – Sekarang</span>
+                    </div>
+                </div>
+
+                <div class="profile-card reveal-right">
+                    <div class="profile-card-icon">🌏</div>
+                    <div>
+                        <span class="profile-card-label">Bahasa</span>
+                        <div class="language-list">
+                            <span>Indonesia</span>
+                            <span>Inggris</span>
+                            <span>Jepang</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section" id="skills">
+        <div class="container section-focus">
+            <div class="text-center reveal">
+                <span class="section-label">Keahlian</span>
+                <h2 class="section-title">Keahlian <span>Utama</span></h2>
+                <p class="section-desc mx-auto">
+                    Keahlian yang tercantum dalam CV dan menjadi bagian dari pengembangan diri saya.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <span class="skill-icon">🎨</span>
+                    <h4>Frontend</h4>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal">
+                    <span class="skill-icon">⚙️</span>
+                    <h4>Backend & Database</h4>
+                    <ul class="skill-list">
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                        <li>MySQL</li>
+                        <li>REST API</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal">
+                    <span class="skill-icon">🛠️</span>
+                    <h4>Tools & Workflow</h4>
+                    <ul class="skill-list">
+                        <li>Git</li>
+                        <li>Composer</li>
+                        <li>Postman</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal">
+                    <span class="skill-icon">🤝</span>
+                    <h4>Soft Skills</h4>
+                    <ul class="skill-list">
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                        <li>Adaptability</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section" id="experience">
+        <div class="container section-focus">
+            <div class="text-center reveal">
+                <span class="section-label">Pengalaman</span>
+                <h2 class="section-title">Pengalaman <span>&amp; Kontribusi</span></h2>
+                <p class="section-desc mx-auto">
+                    Pengalaman dalam memimpin tim, mengelola proyek, dan berkontribusi dalam organisasi.
+                </p>
+            </div>
+
+            <div class="experience-grid">
+                <div class="experience-card reveal">
+                    <div class="exp-period">2024 – 2025</div>
+                    <h4>Project Manager — Library Management</h4>
+                    <p>
+                        Memastikan komunikasi dan koordinasi tim berjalan dengan baik serta menyusun pembagian tugas kepada anggota tim.
+                    </p>
+                </div>
+
+                <div class="experience-card reveal">
+                    <div class="exp-period">2026 – Sekarang</div>
+                    <h4>Project Manager — RFID Absensi</h4>
+                    <p>
+                        Kembali dipercaya sebagai Project Manager pada proyek pengembangan website RFID ABSENSI. Membantu koordinasi tim dan mengawasi perkembangan proyek serta berpartisipasi dalam perencanaan dan pengambilan keputusan selama proyek berlangsung.
+                    </p>
+                </div>
+
+                <div class="experience-card reveal">
+                    <div class="exp-period">2024 – 2026</div>
+                    <h4>Ketua Organisasi ANDRO - IT</h4>
+                    <p>
+                        Memimpin dan mengoordinasikan kegiatan organisasi, mengelola program kerja serta membangun kerja sama antaranggota.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section" id="projects">
+        <div class="container section-focus">
+            <div class="text-center reveal">
+                <span class="section-label">Portofolio</span>
+                <h2 class="section-title">Proyek <span>Unggulan</span></h2>
+                <p class="section-desc mx-auto">
+                    Proyek yang saya kerjakan dalam pengembangan web.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- PROJECT RFID -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <div class="img-placeholder img-placeholder-rfid">
+                            <div class="project-logo-wrapper">
+                                <img src="Asset/logo-rfid.png" alt="Logo RFID" class="project-logo-img" />
+                                <span>RFID Absensi — Smart Attendance System</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">RFID Absensi — Smart Attendance System</h3>
+                        <p class="project-desc">
+                            RFID Absensi adalah proyek sistem presensi digital yang sedang saya kembangkan untuk membantu proses pencatatan kehadiran secara otomatis menggunakan teknologi RFID (Radio Frequency Identification). Sistem ini dirancang untuk menghubungkan kartu RFID dengan aplikasi web sehingga data kehadiran dapat dicatat dan dikelola secara terpusat.
+                        </p>
+                        <div class="project-links">Sedang dikembangkan</div>
+                    </div>
+                </div>
+
+                <!-- PROJECT PERPUS -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <div class="img-placeholder img-placeholder-perpus">
+                            <div class="project-logo-wrapper">
+                                <img src="Asset/logo-perpus.png" alt="Logo Perpus Library" class="project-logo-img" />
+                                <span>Perpus Library — Library Management System</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Perpus Library — Library Management System</h3>
+                        <p class="project-desc">
+                            Sistem manajemen perpustakaan berbasis web yang dikembangkan menggunakan React.js sebagai frontend dan Laravel sebagai backend/API. Tujuan utamanya adalah membantu pengelolaan perpustakaan secara digital, mulai dari pengelolaan buku, anggota, peminjaman, pengembalian, hingga monitoring aktivitas perpustakaan.
+                        </p>
+                        <div class="project-links">
+                            <span class="project-status">
+                                <a href="https://github.com/Seareanz/Library-Management." target="_blank">🌐 Portofolio proyek</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section" id="contact">
+        <div class="container section-focus">
+            <div class="text-center reveal">
+                <span class="section-label">Hubungi Saya</span>
+                <h2 class="section-title">Mari <span>Terhubung</span></h2>
+                <p class="section-desc mx-auto">
+                    Punya proyek atau ingin berkolaborasi? Kirim pesan langsung ke email saya.
+                </p>
+            </div>
+
+            <div class="success-notification" id="successNotif">
+                <div class="icon">✅</div>
+                <h3>Pesan Terkirim!</h3>
+                <p>Terima kasih, pesan Anda berhasil dikirim. Saya akan segera merespons.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="contact-item">
+                        <span class="ci-icon">📧</span>
+                        <div class="ci-text">
+                            <strong>Email</strong>
+                            <a href="mailto:Affandizaenal5@gmail.com">Affandizaenal5@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="ci-icon">📱</span>
+                        <div class="ci-text">
+                            <strong>WhatsApp</strong>
+                            <a href="https://wa.me/qr/2YASJ7HTWFRDL1" target="_blank" rel="noopener noreferrer">+62 895-3268-01502</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="ci-icon">🐙</span>
+                        <div class="ci-text">
+                            <strong>GitHub</strong>
+                            <a href="https://github.com/Seareanz" target="_blank" rel="noopener noreferrer">github.com/Seareanz</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="ci-icon">🔗</span>
+                        <div class="ci-text">
+                            <strong>LinkedIn</strong>
+                            <a href="https://www.linkedin.com/in/fandi-undefined-a80b70400/" target="_blank" rel="noopener noreferrer">linkedin.com/in/fandi-undefined</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="ci-icon">📸</span>
+                        <div class="ci-text">
+                            <strong>Instagram</strong>
+                            <a href="https://instagram.com/sereanzs/" target="_blank" rel="noopener noreferrer">Ser.eanz</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal-right" action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                    <input type="hidden" name="access_key" value="be2073d2-76fe-4db6-a86e-0e62bbe6757d" />
+
+                    <div class="form-group">
+                        <label for="name">Nama Anda</label>
+                        <input type="text" id="name" name="Nama" placeholder="Nama Anda" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Anda</label>
+                        <input type="email" id="email" name="Email" placeholder="email@example.com" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subjek</label>
+                        <input type="text" id="subject" name="Subjek" placeholder="Kolaborasi Proyek" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="Pesan" placeholder="Ceritakan tentang proyek Anda..." required></textarea>
+                    </div>
+
+                    <p class="form-error" id="formError" role="alert" aria-live="polite"></p>
+
+                    <button type="submit" class="btn btn-primary">Kirim Pesan →</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="dot"></span>
+                        Zaenal Afandi
+                    </div>
+                    <p>
+                        Siswa SMK jurusan Pengembangan Perangkat Lunak dan Gim (PPLG) yang memiliki minat di bidang pengembangan web.
+                    </p>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://github.com/Seareanz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fandi-undefined-a80b70400/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:Affandizaenal5@gmail.com" aria-label="Email">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 Zaenal Afandi. All rights reserved.</span>
+                <span>Desain &amp; Dikembangkan oleh <a href="#home">Zaenal Afandi</a></span>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
